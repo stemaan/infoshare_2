@@ -30,3 +30,23 @@ print(new_phonebook)
 new_phonebook.update(Kowalski=898, Nowak=111)
 print(new_phonebook)
 
+del new_phonebook['XYZ']
+print(new_phonebook)
+new_phonebook['abracadabra'] = [123, 456, 789]
+# a = 2
+# print(a)
+# del a
+# print(a)
+
+for key, value in new_phonebook.items():
+    print(f'{key}->{value}')
+
+only_keys = new_phonebook.keys()
+print(only_keys)
+values = new_phonebook.values()
+print(values)
+items = new_phonebook.items()
+print(items)
+
+
+

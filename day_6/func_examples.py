@@ -84,3 +84,15 @@ def foo(a, b, *args):
 foo(1, 2)
 foo(1, 2, 3, 4, 5, 6)
 foo(1, 2, *range(100))
+
+def bar(**kwargs):
+    for key, value in kwargs.items():
+        print(f'{key} -> {value}')
+
+
+bar(a=1, b=2, zxc=4)
+my_dict = {'Kowalski': 123, 'Nowak': 456}
+bar(**my_dict)
+
+def baz(x, y, **kwargs):
+    pass

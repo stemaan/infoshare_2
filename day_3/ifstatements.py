@@ -6,6 +6,10 @@ if b > a:
     print('b > a')
 elif b == a:
     print('b == a')
+elif b == a:
+    print('b == a')
+elif b == a:
+    print('b == a')
 else:
     print('b < a')
 

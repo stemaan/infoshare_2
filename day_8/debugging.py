@@ -18,7 +18,8 @@ for moneta in monety:
             reszta = reszta - wartosc
         except (ZeroDivisionError, NameError) as error:
             continue
-        os.path.split('/home/')
+        wartosc = ilosc * moneta
+        reszta = reszta - wartosc
 
         monety_reszta[indeks_mon_reszta] = ilosc
 
@@ -26,3 +27,5 @@ for moneta in monety:
 
 print("Reszta do wydania:")
 
+print(monety)
+print(monety_reszta)
